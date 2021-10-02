@@ -214,7 +214,7 @@ export function resetGenericPassword(
  * Gets all `service` keys used in keychain entries.
  * @return {Promise} Resolves to an array of strings
  */
-export async function getAllGenericPasswordServices(): Promise<string[]> {
+export function getAllGenericPasswordServices(): Promise<string[]> {
   return RNKeychainManager.getAllGenericPasswordServices();
 }
 
