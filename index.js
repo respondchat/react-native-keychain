@@ -95,10 +95,10 @@ type NormalizedOptions = {
   ...BaseOptions,
 };
 
-export type Options = {
+export type Options = $Shape<{|
   authenticationPrompt?: string | AuthenticationPrompt,
   ...BaseOptions,
-};
+|}>;
 
 export type Result = {|
   +service: string,
